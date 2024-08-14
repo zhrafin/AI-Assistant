@@ -1,4 +1,5 @@
 import { ragChat } from "@/lib/rag-chat";
+import { redis } from "@/lib/redis";
 import { Console } from "console"
 import { Component } from "react";
 
@@ -13,16 +14,21 @@ function reconstructUrl({url}: {url:string[]}){
     return decodedComponents.join("/")
 }
 
-const Page = async({ params }: PageProps) =>{
+const Page = async({ params }: PageProps) =>{ 
 
     const  reconstructedUrl = reconstructUrl({ url : params.url as string[] })
-    console.log(params)
     
-    await ragChat.context.add({
-        type: "html",
-        source: reconstructedUrl,
-        config:{chunkOverlap: 50, chunkSize: 200},
-    })
+    const isAlreadyIndexed = await redis.sismember("indexed-urls", reconstructedUrl)
+
+    if(!isAlreadyIndexed){
+        await ragChat.context.add({
+            type: "html",
+            source: reconstructedUrl,
+            config:{chunkOverlap: 50, chunkSize: 200},
+        })
+
+        await redis.sadd("indexed-urls", reconstructedUrl)
+    }
 
     return <p>hello</p>
     
