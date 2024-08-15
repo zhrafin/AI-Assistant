@@ -88,10 +88,15 @@ To get started with the AI Assistant project, follow these steps:
 
 Below are some screenshots showcasing the GUI of the AI Assistant:
 
-![Screenshot 1](./public/screenshots/gui1.png)
-![Screenshot 2](./public/screenshots/gui2.png)
-![Screenshot 3](./public/screenshots/gui3.png)
-![Screenshot 4](./public/screenshots/gui4.png)
+<div style="display: flex; gap: 10px; justify-content: center;">
+    <img src="demo/Screenshot_3.png" alt="GUI Screenshot 6" width="400" />
+    <img src="demo/Screenshot_4.png" alt="GUI Screenshot 7" width="400" />
+</div>
+
+<div style="display: flex; gap: 10px; justify-content: center;">
+    <img src="demo/Screenshot_5.png" alt="GUI Screenshot 6" width="400" />
+    <img src="demo/Screenshot_6.png" alt="GUI Screenshot 7" width="400" />
+</div>
 
 
 ## Video Demonstration
