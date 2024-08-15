@@ -1,0 +1,8 @@
+nextjs==12.0.7
+@nextui-org/react==2.0.1
+@upstash/rag-chat==1.0.0
+@upstash/redis==1.0.0
+redis==4.5.1
+clsx==1.2.1
+tailwind-merge==1.0.0
+lucide-react==0.1.2
