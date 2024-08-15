@@ -94,6 +94,14 @@ Below are some screenshots showcasing the GUI of the AI Assistant:
 ![Screenshot 4](./public/screenshots/gui4.png)
 
 
+## Video Demonstration
+
+Watch the video demonstration of the AI Assistant application:
+
+[Watch Video](https://path-to-your-video.com/video.mp4)
+
+
+
 ---
 
 Feel free to reach out if you have any questions or need further assistance!
