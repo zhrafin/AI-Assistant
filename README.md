@@ -103,7 +103,7 @@ Below are some screenshots showcasing the GUI of the AI Assistant:
 
 Watch the video demonstration of the AI Assistant application:
 
-[Watch Video](https://path-to-your-video.com/video.mp4)
+[Watch Video](demo/IMG_4902.MOV)
 
 
 
